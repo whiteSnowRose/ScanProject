@@ -1,0 +1,23 @@
+// 在nodejs中,每个项目都有一个package.json，此文件类似maven的pom.xml,此文件定义了项目所需要的各种配置,和当前项目依赖的资源
+// name: 定义项目名称, version: 定义当前项目的版本
+// main: 定义当前加载的入口.truffle.js就是truffle框架的核心配置文件
+// scripts: 指定了当前脚本命令的缩写. npm run dev ==> npm run lite-server
+// devDependencies: 定义了当前项目开发时需要依赖的模块(都存储在node_modules中)
+{
+  "name": "tutorialtoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
